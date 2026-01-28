@@ -68,7 +68,24 @@ def main():
     print("  25 - 29.9       : Gemuk (Overweight)")
     print("  BMI >= 30       : Obesitas (Obese)")
     print("=" * 50)
-    
+    # Berikan saran berdasarkan kategori BMI
+    print("\nSaran Kesehatan:")
+    if bmi < 18.5:
+        print("  • Anda kekurangan berat badan. Konsumsi makanan bergizi seimbang.")
+        print("  • Tambahkan asupan protein dan kalori sehat.")
+        print("  • Lakukan olahraga teratur untuk membangun massa otot.")
+    elif 18.5 <= bmi < 25:
+        print("  • Berat badan Anda ideal. Pertahankan gaya hidup sehat!")
+        print("  • Lanjutkan pola makan seimbang dan olahraga teratur.")
+    elif 25 <= bmi < 30:
+        print("  • Anda memiliki berat badan berlebih. Mulai program diet.")
+        print("  • Kurangi makanan tinggi lemak dan gula.")
+        print("  • Tingkatkan aktivitas fisik minimal 30 menit sehari.")
+    else:
+        print("  • Anda mengalami obesitas. Konsultasikan dengan dokter.")
+        print("  • Ikuti program diet dan olahraga yang terstruktur.")
+        print("  • Pertimbangkan bantuan nutrisionis profesional.")
+    print("=" * 50)
 # Jalankan program
 if __name__ == "__main__":
     main()
